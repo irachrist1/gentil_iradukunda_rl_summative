@@ -1,0 +1,27 @@
+[project]
+name = "summartve"
+version = "1.0.0"
+description = "Mission-based reinforcement learning for simulated district food dispatch"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "gymnasium>=1.1,<2",
+    "matplotlib>=3.10,<4",
+    "moderngl>=5.12,<6",
+    "numpy>=2,<3",
+    "pygame-ce>=2.5,<3",
+    "torch>=2.9,<3",
+    "torchrl>=0.10,<0.15",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", marker = "sys_platform != 'darwin' and platform_machine == 'x86_64'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

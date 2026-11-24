@@ -1,0 +1,26 @@
+{
+  "config": {
+    "algorithm": "ppo",
+    "run": 9,
+    "lr": 0.001,
+    "gamma": 0.97,
+    "width": 64,
+    "batch": 64,
+    "replay": 8192,
+    "target": 64,
+    "epsilon_end": 0.08,
+    "epsilon_steps": 12288,
+    "entropy": 0.02,
+    "rollout": 16,
+    "episodes": 8,
+    "normalize": true,
+    "clip": 0.2,
+    "epochs": 4,
+    "gae": 0.8,
+    "value_coef": 0.5
+  },
+  "seed": 41,
+  "budget": 24576,
+  "validation_return": -11.977812499999997,
+  "episodes": 1536
+}
